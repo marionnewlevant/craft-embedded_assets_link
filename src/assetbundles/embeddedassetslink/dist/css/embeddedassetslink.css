@@ -1,0 +1,66 @@
+/*
+positioning with css. The .linked class is from download assets plugin.
+*/
+/* styles to make space on the label */
+body.ltr .element.embeddedAssetsLinkYes .label {
+  padding-right: 20px;
+}
+body.ltr .element.embeddedAssetsLinkYes.linked .label {
+  padding-right: 40px;
+}
+
+body.ltr .element.removable.embeddedAssetsLinkYes .label {
+  padding-right: 40px;
+}
+body.ltr .element.removable.embeddedAssetsLinkYes.linked .label {
+  padding-right: 60px;
+}
+
+body.rtl .element.embeddedAssetsLinkYes .label {
+  padding-left: 20px;
+}
+body.rtl .element.embeddedAssetsLinkYes.linked .label {
+  padding-left: 40px;
+}
+
+body.rtl .element.removable.embeddedAssetsLinkYes .label {
+  padding-left: 40px;
+}
+body.rtl .element.removable.embeddedAssetsLinkYes.linked .label {
+  padding-left: : 60px;
+}
+
+/* anchor styles */
+body.ltr .element .embeddedAssetsLink {
+  position: absolute;
+  right: 22px;
+}
+
+body.ltr .element.linked .embeddedAssetsLink {
+  right: 42px;
+}
+
+body.rtl .element .embeddedAssetsLink {
+  position: absolute;
+  left: 22px;
+}
+
+body.rtl .element.linked .embeddedAssetsLink {
+  left: 42px;
+}
+
+.element .embeddedAssetsLink::before {
+  content: '';
+  display: inline-block;
+  width: 19px;
+  height: 14px;
+  background-image: url('../img/embeddedAssetsLink.svg');
+  background-size: 19px 14px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.element .embeddedAssetsLink:hover::before {
+  background-image: url('../img/embeddedAssetsLink-focus.svg');
+}
+

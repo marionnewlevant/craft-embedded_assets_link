@@ -1,0 +1,44 @@
+{
+    "name": "marionnewlevant/embedded-assets-link",
+    "description": "Adds a link to the Embedded Asset in the Control Panel",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "embedded assets link"
+    ],
+    "support": {
+        "docs": "https://github.com/marionnewlevant/craft-embedded_assets_link/blob/master/README.md",
+        "issues": "https://github.com/marionnewlevant/craft-embedded_assets_link/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marion Newlevant",
+            "homepage": "http://marion.newlevant.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "spicyweb/craft-embedded-assets": "^2.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+          "marionnewlevant\\embeddedassetslink\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Embedded Assets Link",
+        "handle": "embedded-assets-link",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/marionnewlevant/craft-embedded_assets_link/master/CHANGELOG.md",
+        "components": {
+            "embeddedAssetsLinkService": "marionnewlevant\\embeddedassetslink\\services\\EmbeddedAssetsLinkService"
+        },
+        "class": "marionnewlevant\\embeddedassetslink\\EmbeddedAssetsLink"
+    }
+}
