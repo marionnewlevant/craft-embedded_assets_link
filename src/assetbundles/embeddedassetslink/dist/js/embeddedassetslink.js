@@ -28,6 +28,7 @@ $(function () { // for namespacing if nothing else...
               var $a = $('<a>', {
                 class: 'embeddedAssetsLink',
                 target: '_blank',
+                rel: 'noopener noreferrer',                
                 href: response['assetUrl']
               });
               $a.insertBefore($label);
