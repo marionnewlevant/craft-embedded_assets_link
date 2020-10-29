@@ -2,7 +2,7 @@
     "name": "marionnewlevant/embedded-assets-link",
     "description": "Adds a link to the Embedded Asset in the Control Panel",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
