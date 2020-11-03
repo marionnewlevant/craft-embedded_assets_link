@@ -36,7 +36,7 @@ class EmbeddedAssetsLinkAsset extends AssetBundle
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = "@marionnewlevant/embeddedassetslink/assetbundles/embeddedassetslink/dist";
+        $this->sourcePath = "@marionnewlevant/embeddedassetslink/assetbundles/EmbeddedAssetsLink/dist";
 
         // define the dependencies
         $this->depends = [

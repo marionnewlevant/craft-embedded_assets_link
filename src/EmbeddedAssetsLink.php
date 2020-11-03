@@ -10,7 +10,7 @@
 
 namespace marionnewlevant\embeddedassetslink;
 
-use marionnewlevant\embeddedassetslink\assetbundles\embeddedassetslink\EmbeddedAssetsLinkAsset;
+use marionnewlevant\embeddedassetslink\assetbundles\EmbeddedAssetsLink\EmbeddedAssetsLinkAsset;
 
 use Craft;
 use craft\base\Plugin;
