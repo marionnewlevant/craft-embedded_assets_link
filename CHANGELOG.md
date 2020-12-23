@@ -1,5 +1,9 @@
 # Embedded Assets Link Changelog
 
+## 1.0.3 - 2020-12-22
+### Fixed
+- No error when Embedded Assets plugin not installed
+
 ## 1.0.2 - 2020-11-02
 ### Fixed
 - finished renaming from v 1.0.1

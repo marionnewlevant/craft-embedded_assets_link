@@ -32,12 +32,15 @@ class EmbeddedAssetsLinkService extends Component
      */
     public function assetUrl(int $elementId, string $elementType, int $siteId)
     {
-        $element = Craft::$app->elements->getElementById($elementId, $elementType, $siteId);
-
-        $embeddedAsset = EmbeddedAssets::$plugin->methods->getEmbeddedAsset($element);
-        if ($embeddedAsset)
+        if (EmbeddedAssets::$plugin) // will be null if embedded assets plugin not installed.
         {
-            return $embeddedAsset->url;
+            $element = Craft::$app->elements->getElementById($elementId, $elementType, $siteId);
+
+            $embeddedAsset = EmbeddedAssets::$plugin->methods->getEmbeddedAsset($element);
+            if ($embeddedAsset)
+            {
+                return $embeddedAsset->url;
+            }
         }
 
         return null;
